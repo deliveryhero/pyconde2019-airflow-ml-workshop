@@ -10,7 +10,7 @@ $ cd $HOME
 $ git clone https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop
 ```
 
-:white_check_mark: **Download** the **dockerized Airflow** image **`docker pull puckel/docker-airflow:1.10.4`**
+:white_check_mark: **Download** the **dockerized Airflow** image **`docker pull puckel/docker-airflow`**
 
 :pushpin: For more information about **using Airflow in a Docker container** check the **[puckel docker-airflow project](https://github.com/puckel/docker-airflow)**.
 
@@ -21,7 +21,7 @@ $ cd pyconde2019-airflow-ml-workshop
 
 Launch the Airflow Docker container:
 ```bash
-$ docker run -p 8080:8080 -e LOAD_EX=y -e PYTHONPATH="/usr/local/airflow/pyconde2019-airflow-ml-workshop" -v $HOME/pyconde2019-airflow-ml-workshop/requirements.txt:/requirements.txt -v $HOME/pyconde2019-airflow-ml-workshop/:/usr/local/airflow/pyconde2019-airflow-ml-workshop:rw -v $HOME/pyconde2019-airflow-ml-workshop/dags/:/usr/local/airflow/dags:rw puckel/docker-airflow webserver
+$ docker run -p 127.0.0.1:8080:8080 -e LOAD_EX=y -e PYTHONPATH="/usr/local/airflow/pyconde2019-airflow-ml-workshop" -v $HOME/pyconde2019-airflow-ml-workshop/requirements.txt:/requirements.txt -v $HOME/pyconde2019-airflow-ml-workshop/:/usr/local/airflow/pyconde2019-airflow-ml-workshop:rw -v $HOME/pyconde2019-airflow-ml-workshop/dags/:/usr/local/airflow/dags:rw puckel/docker-airflow webserver
 ```
 
 The above command specify:

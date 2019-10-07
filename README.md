@@ -25,7 +25,7 @@ In this workshop we’ll go over basic Airflow concepts and we’ll setup an ins
 * Any editor (Sublime, PyCharm, Vim, Atom).
 * [Verify that Docker works properly](https://docs.docker.com/get-started/part2/).
 * **Ensure that you allocated 4gb of RAM for the Docker Engine**. (Can be done via desktop app, check Preferences section)
-* **Download the Airflow Docker image**: `docker pull puckel/docker-airflow:1.10.4`
+* **Download the Airflow Docker image**: `docker pull puckel/docker-airflow`
 * Download repository under the `$HOME` directory.
 `git clone https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop`
 
