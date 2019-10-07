@@ -10,7 +10,7 @@ Apache Airflow is an open source project written in Python for programmatically 
 
 You can design your pipelines according to a determined logic: decide which actions to perform, retry them if errors occur, skip tasks if dependencies are not met, access monitor and log status through a friendly and powerful web UI, and a lot more.
 
-In this workshop we’ll go over basic Airflow concepts and we’ll setup an instance for orchestrating a training and an inference pipeline for a machine learning model.
+In **this workshop** we’ll go over **basic Airflow concepts** and we’ll setup an instance **for orchestrating a training and an inference pipeline** for a machine learning model.
 
 
 #### Details for Audience
@@ -24,7 +24,7 @@ In this workshop we’ll go over basic Airflow concepts and we’ll setup an ins
 * **[Docker installed](https://www.docker.com/)**.
 * Any editor (Sublime, PyCharm, Vim, Atom).
 * [Verify that Docker works properly](https://docs.docker.com/get-started/part2/).
-* **Ensure that you allocated 4gb of RAM for the Docker Engine**. (Can be done via desktop app, check Preferences section)
+* **Ensure that you allocated 4gb of RAM for the Docker Engine**. (Can be done via desktop app, check Preferences section. After setting up, restart Docker App)
 * **Download the Airflow Docker image**: `docker pull puckel/docker-airflow`
 * Download repository under the `$HOME` directory.
 `git clone https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop`

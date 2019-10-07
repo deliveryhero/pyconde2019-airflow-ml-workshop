@@ -37,4 +37,5 @@ Examples of [Operators](https://airflow.apache.org/_api/index.html#operators):
 - `RedshiftToS3Transfer`, to execute an UNLOAD command to Amazon s3 as a CSV with headers
 - `GoogleCloudStorageToBigQueryOperator`, to load files from Google Cloud Storage into BigQuery
 
-After this brief explanation we can introduce the [Business Problem: Airflow for training and predicting](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/business_problem.md).
+
+After this short explanation we can introduce the [Exercises: Airflow for training and predicting](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/exercise_intro.md).
