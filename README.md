@@ -1,5 +1,6 @@
 # Airflow: your ally for automating machine learning and data pipelines
 
+
 ### PyCon DE & PyData Berlin // October 9 - 13 2019
 
 <img src="/media/airflow_logo.png" align="right" width="35%">
@@ -41,6 +42,7 @@ You can find the [official Airflow documentation here](https://airflow.incubator
 - [Docker Airflow Setup](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/docker_airflow_setup.md)
 - [Airflow main concepts](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/airflow_main_concepts.md)
 - [Exercises: Airflow for training and predicting](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/exercise_intro.md)
+<a href="https://www.deliveryhero.com"><img src="/media/delivery_hero_logo.png" alt="Delivery Hero" align="right" style="margin-right: 25px" height=110></a>
 - [EX 1. Preconditions: Variables, Tables and Connection](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/exercise_1.md)
 - [EX 2. Train the model](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/exercise_2.md)
 - [EX 3. Prediction](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/exercise_3.md)
