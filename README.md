@@ -24,7 +24,7 @@ In **this workshop** we’ll go over **basic Airflow concepts** and we’ll setu
 #### Workshop Requirements
 * **[Docker installed](https://www.docker.com/)**.
 * Any editor (Sublime, PyCharm, Vim, Atom).
-* [Verify that Docker works properly](https://docs.docker.com/get-started/part2/).
+* [Verify that Docker works properly](https://docs.docker.com/get-started/part2/): `docker run hello-world`
 * **Ensure that you allocated 4gb of RAM for the Docker Engine**. (Can be done via desktop app, check Preferences section. After setting up, restart Docker App)
 * **Download the Airflow Docker image**: `docker pull puckel/docker-airflow`
 * Download repository under the `$HOME` directory.
