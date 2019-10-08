@@ -48,3 +48,4 @@ You can find the [official Airflow documentation here](https://airflow.incubator
 - [EX 2. Train the model](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/exercise_2.md)
 - [EX 3. Prediction](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/exercise_3.md)
 - [Bonus EX. Plot Predictions](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/exercise_4.md)
+- [Come work with us!](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/dh_careers.md)
