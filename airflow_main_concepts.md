@@ -38,4 +38,4 @@ Examples of [Operators](https://airflow.apache.org/_api/index.html#operators):
 - `GoogleCloudStorageToBigQueryOperator`, to load files from Google Cloud Storage into BigQuery
 
 
-After this short explanation we can introduce the [Exercises: Airflow for training and predicting](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/airflow_main_concepts.md).
+After this short explanation we can introduce the [Exercises: Airflow for training and predicting](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/exercise_intro.md).
