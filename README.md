@@ -31,7 +31,7 @@ In **this workshop** we’ll go over **basic Airflow concepts** and we’ll setu
 * Download repository under the `$HOME` directory.
 `git clone https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop`
 
-Note: Airflow installation and setup (without using Docker) are provided as appendix files ([Mac OS X Airflow Setup](#mac-os-x-airflow-setup-top), [Ubuntu Airflow Setup](#ubuntu-airflow-setup-top)).
+Note: Airflow installation and setup (without using Docker) are provided as appendix files ([Mac OS X Airflow Setup](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/mac_os_x_airflow_setup.md), [Ubuntu Airflow Setup](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/ubuntu_airflow_setup.md)).
 
 During the tutorial we assume that everyone follows the steps tailored for using a containerised version of Airflow.
 

@@ -129,4 +129,4 @@ The **Sequential** one allows to run **one task instance at a time** (this is no
 
 :trophy: **Great! Now everything is ready for starting the Exercises!**
 
-:white_check_mark: Jump to the [Airflow main concepts](#airflow-main-concepts-top) section for continuing the tutorial.
+:white_check_mark: Jump to the [Airflow main concepts](https://github.com/deliveryhero/pyconde2019-airflow-ml-workshop/blob/master/airflow_main_concepts.md) section for continuing the tutorial.
