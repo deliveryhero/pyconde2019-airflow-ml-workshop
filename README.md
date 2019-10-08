@@ -1,11 +1,12 @@
 # Airflow: your ally for automating machine learning and data pipelines
 
-
 ### PyCon DE & PyData Berlin // October 9 - 13 2019
+
+#### E. Pasqua, B. Uyarer @ [Delivery Hero](https://www.deliveryhero.com)
 
 <img src="/media/airflow_logo.png" align="right" width="35%">
 
-**Orchestrating, scheduling and monitoring ML pipelines** is a big challenge.<br /> **[Apache Airflow](https://airflow.apache.org)** can be your ally for handling this complexity.
+<br />**Orchestrating, scheduling and monitoring ML pipelines** is a big challenge.<br /> **[Apache Airflow](https://airflow.apache.org)** can be your ally for handling this complexity.
 
 Apache Airflow is an open source project written in Python for programmatically author, schedule and monitor batch execution of tasks.
 
