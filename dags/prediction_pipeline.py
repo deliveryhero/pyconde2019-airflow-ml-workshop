@@ -47,11 +47,11 @@ def save_prediction(**kwargs):
     # INSERT OR REPLACE guarantees to have unique row for each date_to_predict:
     # it inserts a new prediction if it doesn't exists or replace the existing
     # one due to the index idx_date_to_predict on date_to_predict
-    sql_insert = f"""INSERT OR REPLACE INTO {PREDICTION_TABLE} 
+    sql_insert = f"""INSERT OR REPLACE INTO {PREDICTION_TABLE}
                      (date_to_predict, run_date, yhat, yhat_upper, yhat_lower)
-                     VALUES ('{prediction_dict["date_to_predict"]}', 
+                     VALUES ('{prediction_dict["date_to_predict"]}',
                              '{prediction_dict["run_date"]}',
-                             {prediction_dict["yhat"]}, 
+                             {prediction_dict["yhat"]},
                              {prediction_dict["yhat_upper"]},
                              {prediction_dict["yhat_lower"]}
                             )
@@ -90,7 +90,7 @@ with dag:
                                     # keyword arguments to the called function
                                     provide_context=True
                                     )
-    #
+
     save_prediction = PythonOperator(task_id="save_prediction",
                                      python_callable=save_prediction,
                                      provide_context=True

@@ -45,9 +45,9 @@ def save_model_accuracy(**kwargs):
     ti = kwargs['ti']
     accuracy = ti.xcom_pull(task_ids='measure_accuracy')
 
-    sql_insert = f"""INSERT INTO {TRAINING_TABLE} 
+    sql_insert = f"""INSERT INTO {TRAINING_TABLE}
                             (mape_test, rmse_test, days_in_test)
-                     VALUES({accuracy['mape_test']}, 
+                     VALUES({accuracy['mape_test']},
                             {accuracy['rmse_test']},
                             {accuracy['days_in_test']})
                     ;
@@ -66,6 +66,10 @@ with dag:
                                        python_callable=preprocess_raw_data
                                        )
 
+    task_2_split = PythonOperator(task_id="split_data",
+                                  python_callable=split_data
+                                  )
+
     # TODO Complete the PythonOperator tasks for each of the functions to call:
     # 1) preprocess_raw_data --> Already created
     # 2) split_data --> Already created
@@ -73,11 +77,6 @@ with dag:
     # 4) predict_test_wt_arima
     # 5) measure_accuracy --> Already created
     # 6) save_model_accuracy  --> Already created
-
-    # Add here
-    task_2_split = PythonOperator(task_id="split_data",
-                                  python_callable=split_data
-                                  )
 
     task_3_fit_and_save = PythonOperator(# put your task id and python callable here
         )

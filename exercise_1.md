@@ -4,7 +4,7 @@
 <img src="/media/main_steps_exercise_1.png" alt="ex1" width="90%"/>
 </p>
 
-Now that both **Scheduler** and **Webserver** are running in 2 `airflow_env` virtual environments, we can start **getting familiar** with the Airflow User Interface at [http://localhost:8080](http://localhost:8080) and create the preconditions for orchestrating our ML pipelines.
+Now that both **Scheduler** and **Webserver** are running, we can start **getting familiar** with the Airflow User Interface at [http://localhost:8080](http://localhost:8080) and create the preconditions for orchestrating our ML pipelines.
 
 #### 1.1 Add Variables
 
