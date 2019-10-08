@@ -78,11 +78,13 @@ with dag:
     # 5) measure_accuracy --> Already created
     # 6) save_model_accuracy  --> Already created
 
-    task_3_fit_and_save = PythonOperator(# put your task id and python callable here
-        )
+    # TODO Uncomment and Complete the tasks task_3_fit_and_save
+    # task_3_fit_and_save = PythonOperator(# put your task id and python callable here
+    #     )
 
-    task_4_make_prediction = PythonOperator(# put your task id and python callable here
-        )
+    # TODO Uncomment and Complete the tasks task_4_make_prediction
+    # task_4_make_prediction = PythonOperator(# put your task id and python callable here
+    #     )
 
     task_5_accuracy = PythonOperator(task_id="measure_accuracy",
                                      python_callable=measure_accuracy
@@ -93,5 +95,5 @@ with dag:
                                  provide_context= True
                                  )
 
-    # TODO Uncomment and Complete with the tasks order execution
-    task_1_preprocess >> ... >> task_6_save
+    # TODO Uncomment and Complete the tasks dependencies with execution order
+    #task_1_preprocess >> ... >> task_6_save
