@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>pyconde2019-airflow-ml-workshop</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+				    <h2><b>Airflow:<br/> Your Ally for Automating Machine Learning and Data Pipelines</b></h2>
+				    <h3>PyConDE & PyData 2019</h3>
+						<h4>Berlin, 9-13 Oct 2019</h4>
+						<p>E. Pasqua & B.Uyarer</p>
+						<img src="media/airflow_logo.png" style="width: 20%; border: 0">
+						<img src="media/pyconde_pydataber.png" style="width: 20%; border: 0">
+				</section>
+
+				<section>
+						<h2><b>Who We Are</b></h2>
+						<table border="0" class="name">
+								 <tr>
+										 <td style="padding:0px; margin:0px; border:0">
+												<img src="media/enrica_pasqua.jpg"  style="border: 0" width="80%">
+										 </td>
+										 <td style="padding:0px; margin:0px; border:0">
+											 <img src="media/bahadir_uyarer.jpg"  style="border: 0" width="80%">
+										</td>
+								 </tr>
+								 <tr>
+										<td style="padding:0px; vertical-align:middle;">
+											Enrica Pasqua <b><a>#enricapq</a></b>
+										</td>
+										<td style="padding:0px; vertical-align:middle;">
+											Bahadir Uyarer <b><a>#baadirr</a></b>
+										</td>
+								</tr>
+								<tr>
+									 <td style="padding-top:10px; padding-left:0px; vertical-align:middle;">
+										 <b>Data Engineer Manager </b><br />@ Delivery Hero
+									 </td>
+									 <td style="padding-top:10px; padding-left:0px; vertical-align:middle;">
+										 <b>Data Scientist</b><br />@ Delivery Hero
+									 </td>
+							 </tr>
+						</table>
+				</section>
+
+				<section>
+				    <h2><b>Download the repo</b></h2>
+				    <p><b>https://github.com/deliveryhero/<br>pyconde2019-airflow-ml-workshop</b></p>
+						<img src="media/airflow_docker.png" alt="installation" style="width: 60%; border: 0">
+				</section>
+
+				<section>
+				    <h3><b>Business Problem</b></h3>
+				    <p>Forecast Daily MIN temperature for Melbourne (AU)</p>
+						<h3><b>Model</b></h3>
+						<img src="media/python_logo.png" style="width: 15%; border: 0">
+						<img src="media/arima.png" style="width: 42.5%; border: 0">
+						<h3><b>Data</b></h3>
+						<blockquote style="width: 100%; text-align: left">
+							<ul>
+  							 <li>Min. daily temperatures in Melbourne over 10 years (1981-1990)</li>
+  							 <li>Units are in degrees Celsius</li>
+								 <li>There are 3650 observations</li>
+								 <li>Data is credited to the Australian Bureau of Meteorology</li>
+  				    </ul>
+					 </blockquote>
+				</section>
+
+				<section>
+						<h3><b>Solution</b></h3>
+						<img src="media/big_picture.png" style="width: 90%; border: 0">
+				</section>
+
+				<section>
+				 	  <h2><b>What is Airflow</b></h2>
+						<ul>
+							 <li>Apache <b>open source</b> tool for <b>orchestrating workflows</b></li>
+							 <li>Active community: 900+ contributors for a 14k stars repository</li>
+							 <li>Written in <b>Python</b> for programmatically author, schedule and monitor <b>batch execution</b> of <b>tasks</b></li>
+						</ul>
+				    <img src="media/airflow_logo.png" style="width: 30%; border: 0">
+				</section>
+
+				<section>
+				 	  <h2><b>Why Airflow</b></h2>
+						<ul>
+							 <li><b>Orchestrate</b> sequences of tasks: when and in which order</li>
+							 <li>Has friendly and powerful <b>WEB UI (+CLI)</b></li>
+							 <li><b>Handle failures</b> (+alert)</li>
+							 <li>Manage <b>dependencies</b></li>
+							 <li><b>Monitor</b> performance</li>
+							 <li><b>Log</b> tasks in real time</li>
+							 <li><b>Scale</b> distribuiting tasks</li>
+							 <li>Is <b>extensible</b> and customisable</li>
+							 <li><b>Design</b> pipelines as <b>code</b></li>
+						</ul>
+				</section>
+
+				<section>
+				 	  <h2><b>Airflow Architecture</b></h2>
+						<ul>
+							 <li><b>Metadata DB</b> → store information</li>
+							 <img src="media/airflow.png" alt="Airflow Architecture"  style="margin-right: 0px; margin-left: 5px; width: 42%; border: 0" class="lazy img_right">
+							 <li><b>Scheduler</b> → schedule jobs</li>
+							 <li><b>Worker</b> → execute tasks</li>
+							 <br />
+							 <li><b>Web Server</b> → Flask app for UI</li>
+							 <br />
+							 <li>All these components can be centralised or distributed<br />
+								 (e.g. Celery, Dask)</li>
+						</ul>
+			  </section>
+
+				<section>
+				    <h2><b>Download the repo</b></h2>
+				    <p><b>https://github.com/deliveryhero/<br>pyconde2019-airflow-ml-workshop</b></p>
+						<img src="media/airflow_docker.png" alt="installation" style="width: 60%; border: 0">
+				</section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
