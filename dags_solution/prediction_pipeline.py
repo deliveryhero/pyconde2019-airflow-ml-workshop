@@ -76,7 +76,6 @@ def run_prediction(**kwargs):
     # add execution information
     result['date_to_predict'] = prediction_date
     result['run_date'] = run_date
-    print(result)
     return result
 
 
